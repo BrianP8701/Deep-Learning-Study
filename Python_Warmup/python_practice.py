@@ -43,24 +43,75 @@ list_2[0] = 9
 number_of_columns = 4
 number_of_rows = 3 
 matrix_list = [[0]*number_of_columns] * number_of_rows # 2D Array
-print(matrix_list)
+#print(matrix_list)
 
 tuple_1 = (1, 2, 3)   # Tuple
 # tuple_1[0] = 9   Tuple values can't be changed
-print(tuple_1)
+#print(tuple_1)
 
 dictionary_1 = {'goat' : "mwaaaa", "RPT" : 444}  # Hashmap
 
 a = 5
 b = 7
 c = 1
-print(a**3)   # To the power of
-print(17//a)  # Divide, but gets rid of remainder
+#print(a**3)   # To the power of
+#print(17//a)  # Divide, but gets rid of remainder
 
 sports = True
-if(not not not sports):
-     print('gdkkk')
-else:
-    print('4 sev 4 sev')
+#if(not not not sports):
+     #print('gdkkk')
+#else:
+    #print('4 sev 4 sev')
 
-#IS
+sport = ['Football', 'Soccer', 'Basketball', 'Tennis']
+#if 'Soccer' in sport:
+    #print("Mandem got the tekkers")
+#elif "Basketball" in sport:
+    #print("Run down ima oottaaa")
+#elif 'Football' in sport:
+    #print("Typical americano")
+
+#if "Football":
+    #print("Like what like how??")
+
+#for i in range(5):
+    #print("I am at {}" .format(i+1))
+#for i in range(10, 13):
+    #print(i)
+
+n = 5
+#while(n > 0):
+    #print("The flockas at {}".format(n))
+    #n-=1    
+
+#for i in range(len(sport)):
+    #print(sport[i])
+
+#for currSport in sport:
+    #print(currSport)
+
+print(sport)
+
+def sum_and_product(a, b): # Returns two values!
+    return a * b, a + b
+
+g, d = sum_and_product(2, 3)
+print(g)
+print(d)
+
+def print_name(name, age="70"):
+    print("{} is {} years old".format(name, age))
+
+
+print(print_name("Joseph"))
+
+def musho_jumbo(*args): # Pass tuple to method
+    print(type(args))
+
+musho_jumbo("Grass", "On", "a ", "Hill", 4, 4.0, True)
+
+def hashmap_as_input(first_arg, **kwarg): # Pass dictionary to method
+    print("First parameter is {}".format(first_arg))
+    print(kwarg)
+
+hashmap_as_input("Flockaa", key1="gold", key2=44, key3=False)
